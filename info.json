@@ -3,19 +3,19 @@
 		"required": "3.0.1",
 		"tested": "5.6",
 		"repo_url": "",
-		"alternative_repo_url": "https://github.com/Ziggeo/ziggeo-wp-media-for-acf"
+		"alternative_repo_url": "https://github.com/Ziggeo/ziggeo-wp-media-for-advanced-custom-fields"
 	},
 	"plugin": {
 		"name": "ziggeo-media-for-acf",
 		"title": "Ziggeo Media for ACF",
 		"version": "1.0",
 		"author": "Ziggeo",
-		"logo": "https://raw.githubusercontent.com/Ziggeo/ziggeo-wp-media-for-acf/master/assets/images/logo.png",
+		"logo": "https://raw.githubusercontent.com/Ziggeo/ziggeo-wp-media-for-advanced-custom-fields/master/assets/images/logo.png",
 		"contributors": "oliverfriedmann, baned, carloscsz409, natashacalleia",
 		"tags": "ziggeo, multimedia, video, video field, advanced custom fields, video form, ACF",
 		"description": "This plugin brings video player and recorder (including screen recording) to your ACF by utilizing the powerful and award winning Ziggeo.",
-		"highlight": "Typo fix and addoption of new coding for addons",
-		"info_url": "https://raw.githubusercontent.com/Ziggeo/ziggeo-wp-media-for-acf/master/info.json",
+		"highlight": "Initial release",
+		"info_url": "https://raw.githubusercontent.com/Ziggeo/ziggeo-wp-media-for-advanced-custom-fields/master/info.json",
 		"addon_url": "https://ziggeo.com/integrations/wordpress/",
 		"docs_url": "https://ziggeo.com/docs/integrations/wordpress/"
 	},
