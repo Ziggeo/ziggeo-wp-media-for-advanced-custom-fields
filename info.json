@@ -1,14 +1,14 @@
 {
 	"wp": {
 		"required": "3.0.1",
-		"tested": "5.6",
+		"tested": "6.1.1",
 		"repo_url": "",
 		"alternative_repo_url": "https://github.com/Ziggeo/ziggeo-wp-media-for-advanced-custom-fields"
 	},
 	"plugin": {
 		"name": "ziggeo-media-for-acf",
 		"title": "Ziggeo Media for ACF",
-		"version": "1.0",
+		"version": "1.1",
 		"author": "Ziggeo",
 		"logo": "https://raw.githubusercontent.com/Ziggeo/ziggeo-wp-media-for-advanced-custom-fields/master/assets/images/logo.png",
 		"contributors": "oliverfriedmann, baned, carloscsz409, natashacalleia",

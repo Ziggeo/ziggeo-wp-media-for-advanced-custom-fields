@@ -21,7 +21,7 @@ if( !class_exists('Ziggeo_acf_field_ziggeo_template') ) {
 
 			// defaults (array) Array of default settings which are merged into the field object. These are used later in settings
 			$this->defaults = array(
-				'template_id'       => ''
+				'template_id'   => ''
 			);
 
 			//  l10n (array) Array of strings that are used in JavaScript. This allows JS strings to be translated in PHP and loaded via:
@@ -78,12 +78,16 @@ if( !class_exists('Ziggeo_acf_field_ziggeo_template') ) {
 
 			if(ziggeo_p_template_exists($field['template_id'])) {
 
-				$_tmp_field = ziggeo_p_content_filter(ziggeo_p_template_exists($field['template_id']));
+				$_tmp_field = str_replace(array("'\'", "\'"), "'", ziggeo_p_content_filter(ziggeo_p_template_exists($field['template_id'])));
 
-				$_slice_point = stripos($_tmp_field, ' ', stripos($_tmp_field, '<ziggeo'));
+				$_tmp_field = str_replace('\,', "',", $_tmp_field);
 
-				$_tmp_field = substr($_tmp_field, 0, $_slice_point) . ' data-id="' . $field_id . '"' .
-								' data-is-acf="true" ' . substr($_tmp_field, $_slice_point);
+				if(strpos($_tmp_field, '<ziggeo') > -1) {
+					$_slice_point = stripos($_tmp_field, ' ', stripos($_tmp_field, '<ziggeo'));
+
+					$_tmp_field = substr($_tmp_field, 0, $_slice_point) . ' data-id="' . $field_id . '"' .
+									' data-is-acf="true" ' . substr($_tmp_field, $_slice_point);
+				}
 
 				$field_output = $_tmp_field;
 			}

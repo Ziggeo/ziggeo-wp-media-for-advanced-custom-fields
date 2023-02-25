@@ -2,8 +2,8 @@
 Contributors: oliverfriedmann, baned, carloscsz409, natashacalleia
 Tags: ziggeo, video, video field, advanced custom fields, video form, acf
 Requires at least: 3.0.1
-Tested up to: 5.4.2
-Stable tag: 1.0
+Tested up to: 6.1.1
+Stable tag: 1.1
 Requires PHP: 5.2.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -21,7 +21,6 @@ Want to show video where you otherwise would not be able to?
 
 If any of that sounds like your story, then this is the right plugin for you.
 
-
 = Benefits =
 
 Allows you to quickly add videos to your ACF setups and workflows.
@@ -31,6 +30,8 @@ Native integration, clean imlpementation and great support
 
 == Screenshots ==
 
+1. Add Group - Add Fields within Group
+2. New Field - Available Ziggeo Field types 
 
 == Installation ==
  
@@ -64,8 +65,11 @@ Please go to our [WordPress forum](https://support.ziggeo.com/hc/en-us/community
 
 == Upgrade Notice ==
 
-= 1.0 =
-* Initial commit
+= 1.1 =
+* Improvement: Updated to support lazyload feature of Ziggeo core plugin
+* Improvement: Added support for template v2
+* Fix: Fixed a typo in the recorder code
+* Improvement: Made sure that during template parsing by ACF bridge plugin we do not assume everything is Ziggeo embedding, and consider that something might be a videowall or otherwise.
 
 == Changelog ==
 

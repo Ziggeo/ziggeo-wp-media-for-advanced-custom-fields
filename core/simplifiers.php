@@ -311,7 +311,3 @@ function ziggeoacf_get_videowall_code($field) {
 	//Lets return it
 	return $code;
 }
-
-
-
-

@@ -260,7 +260,7 @@ if( !class_exists('Ziggeo_acf_field_video_recorder') ) {
 				$field['name'] = '';
 			}
 
-			$field_id = 'acf-video-player-' . $field['ID'] . '-' . $field['key'];
+			$field_id = 'acf-video-recorder-' . $field['ID'] . '-' . $field['key'];
 			//echo '<input id="' . $field_id . '" name="' . $field['name'] . '" type="text" value="' . $field['video_token'] .'">';
 			echo '<input id="' . $field_id . '" name="' . $field['name'] . '" type="hidden">';
 			echo '<ziggeorecorder data-id="' . $field_id . '"' . ' data-is-acf="true"' . ziggeoacf_get_recorder_code($field) . '></ziggeorecorder>';
